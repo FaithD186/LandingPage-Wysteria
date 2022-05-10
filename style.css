@@ -31,7 +31,8 @@ a {
     color: #FFF;
 }
 a:hover{
-    color: #fed99b;
+    color: #383961;
+    transition:0.4s;
 }
 
 .header{
@@ -43,7 +44,7 @@ a:hover{
 }
 /*hero*/
 .hero{
-    height: 90vh;
+    height: 91vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -81,10 +82,16 @@ a:hover{
     padding: 10px 20px 10px 20px;
     max-width: 300px;
     border-radius: 30px;
+    cursor: pointer;
 
 }
+.button a{
+    color: #383961;
+    text-decoration: none;
+}
 .button:hover{
-    background-color: #f4e5a2;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition:0.4s;
 }
 /*dreams to visit*/
 .dreams{
@@ -95,6 +102,7 @@ a:hover{
     justify-content: flex-start;
     align-items: center;
     background-color: #f4e5a2; 
+    background-color: #fed99b;
 }
 .title{
     font-size:36px;
@@ -120,9 +128,13 @@ a:hover{
 .box{
     height: 200px;
     width: 200px;
-    background-color: #f6f2e3;
+    background-color: #fff3df;
     border-radius: 5px;
     background-image: url("");
+}
+.box:hover{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition:0.4s;
 }
 .item{
     max-width: 200px;
@@ -132,6 +144,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     margin: 20px;
+    cursor: pointer;
 }
 .txt{
     max-width: 150px;
@@ -141,10 +154,15 @@ a:hover{
 }
 /*third section*/
 .third{
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     background-color: #d3f0f5; 
     background-color: #f9f2d1;
+    background-color: #fff3df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
 }
@@ -157,21 +175,33 @@ a:hover{
 .title2{
     font-size:36px;
     font-weight: 800;
-    color: #8f813e;
-    margin-top: 50px;
+    color:  #a17456;;
+    margin-top: 2px;
     text-align: center;
 }
 .text{
-    color: #8f813e;
+    color: #a17456;
     background-color: #FFF;
     padding: 30px 40px 30px 40px;
     max-width: 200px;
     border-radius: 20px;
     margin-left: -70px;
+    cursor: pointer;
+}
+.text:hover{
+  box-shadow: 0 5px 15px #bee8ef;
+  transition:0.4s;
+}
+.subtext2{
+    color: #a17456;
+    font-size: 18px;
+    max-width: 700px;
+    text-align: center;
+    margin-top: 20px;
 }
 /*CTA*/
 .cta{
-    height: 50vh;
+    height: 55vh;
     width: 100vw;
     background-color: #fefefb; 
     display: flex;
@@ -204,6 +234,11 @@ a:hover{
     background-color: #fed99b;
     border: 1px solid #8f813e;
     border-radius: 20px;
+    cursor: pointer;
+}
+.cta-button:hover{
+    background-color: #fff3df;
+    transition:0.4s;
 }
 /*footer*/
 .footer{
@@ -217,7 +252,3 @@ a:hover{
 .footer-text{
     color: white;
 }
-
-
-
-
